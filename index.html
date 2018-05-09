@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="temp-input">
+    <div class="temp-input__field">
+      <label class="temp-input__field__label" for="input-temp">Temperature:</label>
+      <input id="input-temp" class="js-temp-input" type="text" />
+    </div>
+    <div class="temp-input__field">
+      <label class="temp-input__field__label">Unit:</label>
+      <select id="input-unit" class="js-unit-input">
+        <option value='F'>F</option>
+        <option value='C'>C</option>
+      </select>
+    </div>
+  </div>
+  <div class="thermometer">
+    <p class="thermometer__state js-state-message"></p>
+    <div class="thermometer__meter">
+      <span class="thermometer__meter__freezing">-- freezing</span>
+      <span class="thermometer__meter__boiling">-- boiling</span>
+      <span class="thermometer__meter__glass">
+        <span class="thermometer__meter__glass__amount js-glass-amount"></span>
+      </span>
+      <div class="thermometer__bulb">
+        <span class="circle"></span>
+        <span class="filler"></span>
+      </div>
+    </div>
+  </div>
+</div>

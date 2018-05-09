@@ -1,0 +1,109 @@
+$grey: #e5e5e5;
+
+* { box-sizing: border-box; }
+
+body {
+  background: #20262E;
+  font-family: Helvetica;
+}
+.container {
+  padding: 20px;
+  background-color: white;
+}
+.temp-input {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin: 0 auto;
+  max-width: 300px;
+  justify-content: space-around;
+}
+.temp-input__field {
+  min-width: 50px;
+
+  & > * {
+    display: block;
+    width: 100%;    
+  }
+}
+.temp-input__field__label { margin-bottom: 10px; }
+
+.thermometer {
+  margin: 10px auto 0;
+  padding: 20px;
+  text-align: center;
+  height: 400px;
+  position: relative;
+  width: 100%;
+}
+.thermometer__state { margin-bottom: 10px; }
+.thermometer__meter {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 340px;
+}
+
+.thermometer__meter__freezing,
+.thermometer__meter__boiling {
+  position: absolute;
+  width: 90px;
+  left: 100%;
+  transform: translateX(-10px);
+  top: 55%;
+}
+
+.thermometer__meter__boiling {
+  top: 20%;
+}
+
+.thermometer__meter__glass {
+  background: $grey;
+  border-radius: 100px 100px 0 0;
+  display: block;
+  height: 300px;
+  padding: 5px;
+  position: relative;
+  width: 30px;
+  margin-left: 15px;
+}
+
+.thermometer__meter__glass__amount {
+  border-radius: 100px;
+  display: block;
+  width: 20px;
+  position: absolute;
+  bottom: 5px;
+}
+
+.thermometer__bulb {
+  background: $grey;
+  border-radius: 50%;
+  display: block;
+  height: 60px;
+  padding: 5px;
+  position: relative;
+  transform: translateY(-20px);
+  width: 60px;
+}
+
+.circle {
+  border-radius: 100px;
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-color: #f34e54;
+}
+
+.filler {
+  border-radius: 100px 100px 0 0;
+  display: block;
+  height: 30px;
+  width: 20px;
+  position: relative;
+  top: -65px;
+  right: -15px;
+  z-index: 30;
+  background-color: #f34e54;
+}
